@@ -3,7 +3,7 @@ import { ref } from "vue";
 import { getCurrentUser } from "@/api/user";
 import { AxiosResponse } from "axios";
 import { logicalPropertiesLinter } from "ant-design-vue";
-export const userLoginUserStore = defineStore("loginUser", () => {
+export const useLoginUserStore = defineStore("loginUser", () => {
   const loginUser = ref<any>({
     username: "未登录",
   });

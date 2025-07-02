@@ -33,8 +33,8 @@ import { h, ref } from "vue";
 import { HomeOutlined, CrownOutlined } from "@ant-design/icons-vue";
 import { MenuProps } from "ant-design-vue";
 import { useRouter } from "vue-router";
-import { userLoginUserStore } from "@/store/userLoginUserStore";
-const loginUserStore = userLoginUserStore();
+import { useLoginUserStore } from "@/store/useLoginUserStore";
+const loginUserStore = useLoginUserStore();
 const router = useRouter();
 //点击菜单后的路由跳转事件
 const doMenuClick = ({ key }: { key: string }) => {
